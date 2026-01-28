@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -106,7 +107,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color:  #ccec8f;
+    color: #ccec8f;
 }
 
 /* Footer bottom copyright */
@@ -119,45 +120,71 @@ footer .copyright {
     color: #aaa;
 }
 
-
-/* Container for multiple images */
-.images {
-    display: flex;               /* arrange images in a row */
-    flex-wrap: wrap;             /* wrap to next line if screen is small */
-    gap: 15px;                   /* space between images */
-    justify-content: center;     /* center the whole group */
-    padding: 20px;
-}
-
-/* Each image styling */
-.images img {
-    width: 250px;               
-    height: 180px;              
-    object-fit: cover;          
-    border-radius: 10px;        
-    border: 2px solid #ddd;     
-    transition: transform 0.3s, box-shadow 0.3s; 
-}
-
-/* Hover effect for images */
-.images img:hover {
-    transform: scale(1.05);         /* slight zoom */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* add depth */
-}
-
-/* Optional: Responsive adjustment */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .images img {
-        width: 45%;  /* two per row on tablets */
-        margin-bottom: 10px;
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
     }
 }
 
-@media (max-width: 480px) {
-    .images img {
-        width: 90%;  /* one per row on phones */
-    }
+back-home-btn {
+    display: inline-block;
+    margin: 40px auto;
+    padding: 12px 25px;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+
+main {
+    text-align: center;
+}
+.back-home-btn:hover {
+    background-color: #f4c10f;
+    color: #222;
+    transform: translateY(-3px);
+}
+
+/* Gallery container */
+.cafe-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Images */
+.cafe-bar img {
+    width: 100%;
+    height: 260px;              /* taller = classy */
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(90%);
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover effect */
+.cafe-bar img:hover {
+    transform: scale(1.08);
+    filter: brightness(110%);
+}
+h1{
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
 /* Container to center button */
 .button-container {
     display: flex;
@@ -180,4 +207,6 @@ footer .copyright {
 .back-button:hover {
     background-color: #c0392b;
     transform: scale(1.05);
-}g
+}
+
+
