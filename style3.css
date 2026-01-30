@@ -106,7 +106,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color:  #ccec8f;
+    color: #ccec8f;
 }
 
 /* Footer bottom copyright */
@@ -119,82 +119,16 @@ footer .copyright {
     color: #aaa;
 }
 
-
-/* Container for multiple images */
-.images {
-    display: flex;               /* arrange images in a row */
-    flex-wrap: wrap;             /* wrap to next line if screen is small */
-    gap: 15px;                   /* space between images */
-    justify-content: center;     /* center the whole group */
-    padding: 20px;
-}
-
-/* Each image styling */
-.images img {
-    width: 250px;               
-    height: 180px;              
-    object-fit: cover;          
-    border-radius: 10px;        
-    border: 2px solid #ddd;     
-    transition: transform 0.3s, box-shadow 0.3s; 
-}
-
-/* Hover effect for images */
-.images img:hover {
-    transform: scale(1.05);         /* slight zoom */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* add depth */
-}
-
-.video {
-    display: flex;
-    justify-content: center; /* center horizontally */
-    margin: 40px 0;
-}
-
-.video video {
-    width: 350px;      /* control size here */
-    max-width: 90%;    /* responsive on small screens */
-    border-radius: 10px;
-}
-
-
-
-/* Optional: Responsive adjustment */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .images img {
-        width: 45%;  /* two per row on tablets */
-        margin-bottom: 10px;
+    .navbar {
+        flex-direction: column;
+        text-align: center;
     }
-}
 
-@media (max-width: 480px) {
-    .images img {
-        width: 90%;  /* one per row on phones */
+    #main-nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
     }
-}
-/* Container to center button */
-.button-container {
-    display: flex;
-    justify-content: center; /* horizontal center */
-    align-items: center;     /* vertical center if container has height */
-    min-height: 200px;       /* adjust height if you want it lower/higher */
-}
-
-/* Button style */
-.back-button {
-    background-color: #222;
-    color: #fff;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.back-button:hover {
-    background-color: #ccec8f;
-    transform: scale(1.05);
-}
-h1{
-    text-align: center;
 }
