@@ -61,6 +61,42 @@ header {
     color: #ccec8f;
 }
 
+/* Container to center button */
+.button-container {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center if container has height */
+    min-height: 200px;       /* adjust height if you want it lower/higher */
+}
+
+/* Button style */
+.back-button {
+    background-color: #222;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #ccec8f;
+    transform: scale(1.05);
+}
+
+
+
+
+main {
+    text-align: center;
+}
+.back-home-btn:hover {
+    background-color: #f4c10f;
+    color: #222;
+    transform: translateY(-3px);
+}
+
 /* ===== FOOTER ===== */
 footer {
     background-color: #222;
