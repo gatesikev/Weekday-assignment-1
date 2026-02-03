@@ -223,20 +223,7 @@ footer .copyright {
     margin: 20px;
 }
 
-/* ===== Gallery ===== */
-.gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.gallery-grid img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    margin: 10px;
-    border: 2px solid #333;
-}
 
 
 
